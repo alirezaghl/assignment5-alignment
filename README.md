@@ -1,3 +1,13 @@
+# solutions
+
+- gsm8k baseline: run qwen 2.5 1.5B on gsm8k
+    - code [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py)
+    - code [baseline_results.py]([./cs336_alignment/outputs/math_baseline.md](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py))
+- sft helper
+    - code [sft_helper.py]([./cs336_alignment/utils.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py))
+
+
+
 # CS336 Spring 2025 Assignment 5: Alignment
 
 For a full description of the assignment, see the assignment handout at
