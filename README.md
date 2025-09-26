@@ -6,6 +6,9 @@
 - sft helper
     - code [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
 
+- grpo helper (codes related to section 7)
+      - code[gpro_helper](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
+
 
 
 # CS336 Spring 2025 Assignment 5: Alignment
