@@ -1,13 +1,13 @@
 # solutions
 
 - gsm8k baseline: run qwen 2.5 1.5B on gsm8k
-    - code [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py)
-    - code [baseline_results.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py)
+    - [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py)
+    - [baseline_results.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py)
 - sft helper
-    - code [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
+    - [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
 
 - grpo helper (codes related to section 7)
-      - code [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
+      - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
 
 
 
