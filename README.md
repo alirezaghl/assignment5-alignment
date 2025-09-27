@@ -7,7 +7,7 @@
     - [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
 - sft experiment
     - [sft_experiment.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.py)
-    - [run_experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/run_experiments.sh)
+    - [run_experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh)
 - grpo helper (codes related to section 7)
       - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
 
