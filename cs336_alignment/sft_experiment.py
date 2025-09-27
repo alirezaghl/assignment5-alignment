@@ -67,6 +67,7 @@ def evaluate_model(vllm_model, dataset, reward_fn, max_tokens=1024):
     total_reward = 0
     format_reward = 0
     answer_reward = 0
+    qa_pairs = []
     
     for output, gt in zip(outputs, gt_answers):
         response_text = output.outputs[0].text
@@ -74,12 +75,14 @@ def evaluate_model(vllm_model, dataset, reward_fn, max_tokens=1024):
         total_reward += reward_dict["reward"]
         format_reward += reward_dict["format_reward"]
         answer_reward += reward_dict["answer_reward"]
+        qa_pairs.append({"prompt":output.prompt, "answer":response_text, "reward":reward_dict["answer_reward"]})
     
     n = len(dataset)
     return {
         "total_accuracy": total_reward / n,
         "format_accuracy": format_reward / n,
-        "answer_accuracy": answer_reward / n
+        "answer_accuracy": answer_reward / n,
+        "qa_pairs": qa_pairs
     }
 
 def parse_gsm8k(answer_text):
@@ -127,6 +130,7 @@ def main():
     parser.add_argument("--num_epochs", type=int, default=2, help="Number of training epochs")
     parser.add_argument("--train_path", type=str, default="/home/neuroali/pytorch_projects/pytorch_cuda_env/RL-LLM/assignment5-alignment/data/gsm8k/train.jsonl")
     parser.add_argument('--test_path', type=str, default='/home/neuroali/pytorch_projects/pytorch_cuda_env/RL-LLM/assignment5-alignment/data/gsm8k/test.jsonl')
+    parser.add_argument("--filtered_data_path", type=str, default="/home/neuroali/pytorch_projects/pytorch_cuda_env/RL-LLM/assignment5-alignment/cs336_alignment/filtered_gsm8k.json")
     parser.add_argument('--gradient_accumulation_steps', type=int, default=4)
     parser.add_argument('--grad_clip', type=float, default=1.0)
 
@@ -180,7 +184,8 @@ def main():
     train_labels = train_tokenized["labels"].to(model.device)
     train_response_mask = train_tokenized["response_mask"].to(model.device)
     
-    
+    filtered_dataset = []
+
     for epoch in range(args.num_epochs):
         print(f"\nepoch {epoch + 1}")
         
@@ -214,7 +219,13 @@ def main():
             load_policy_into_vllm_instance(model, vllm_model)
             # preferred not use log generations!
             eval_results = evaluate_model(vllm_model, test_dataset, r1_zero_reward_fn, max_tokens=1024)
-            
+
+            qa_pairs = eval_results["qa_pairs"]
+
+            for qa_pair in qa_pairs:
+                if qa_pair["reward"]==1:
+                    filtered_dataset.append({"question":qa_pair["prompt"], "answer":qa_pair["answer"]})
+
             print(f"Validation Results:")
             print(f"  Total Accuracy: {eval_results['total_accuracy']:.3f}")
             print(f"  Format Accuracy: {eval_results['format_accuracy']:.3f}")
@@ -230,6 +241,10 @@ def main():
             })
     
     print(f"validation accuracy: {eval_results['total_accuracy']:.3f}")
+
+    with open(args.filtered_data_path, "w") as f:
+        json.dump({"dataset":filtered_dataset,
+                   "len": len(filtered_dataset)},f, indent=4)
 
 if __name__ == "__main__":
         main()

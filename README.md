@@ -5,11 +5,11 @@
     - [baseline_results.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py)
 - sft helper
     - [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
-
+- sft experiment
+    - [sft_experiment.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.py)
+    - [run_experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh)
 - grpo helper (codes related to section 7)
       - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
-
-
 
 # CS336 Spring 2025 Assignment 5: Alignment
 
