@@ -1,5 +1,8 @@
 ## Solutions
 
+All the functions have passed the unit tests. Code for the SFT experiment and expert iteration is functional, and if you run it, it will lead to improved accuracy. 
+However, I was not able to fully train them and report the results because of compute constraints.
+
 ### GSM8K Baseline
 Baseline evaluation of Qwen 2.5 1.5B model on GSM8K dataset
 - [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py) 
