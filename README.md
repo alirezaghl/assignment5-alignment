@@ -1,15 +1,27 @@
-# solutions
+## Solutions
 
-- gsm8k baseline: run qwen 2.5 1.5B on gsm8k
-    - [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py)
-    - [baseline_results.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py)
-- sft helper
-    - [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
-- sft experiment
-    - [sft_experiment.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.py)
-    - [run_experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh)
-- grpo helper (codes related to section 7)
-      - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
+### GSM8K Baseline
+Baseline evaluation of Qwen 2.5 1.5B model on GSM8K dataset
+- [gsm8k_baseline.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/gsm8k_baseline.py) 
+- [baseline_results.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/baseline_results.py) 
+
+### SFT Helper
+
+- [sft_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_helper.py)
+
+### SFT Experiment
+
+- [sft_experiment.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.py) 
+- [run_experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh) 
+
+### Expert Iteration
+
+- [expert_iteration.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.py)
+- [run_expert_iteration.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/run_expert_iteration.sh) 
+
+### GRPO Helper
+(Section 7)
+- [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py) 
 
 # CS336 Spring 2025 Assignment 5: Alignment
 
