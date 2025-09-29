@@ -47,7 +47,7 @@ def compute_naive_policy_gradient_loss(
         raw_rewards_or_advantages,
         policy_log_probs
 ):
-    pg_loss = -raw_rewards_or_advantages.expand_as(policy_log_probs) * policy_log_probs
+    pg_loss = -raw_rewards_or_advantages.unsqueeze(-1) * policy_log_probs
     return pg_loss
 
 
