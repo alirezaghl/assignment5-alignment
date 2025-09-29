@@ -22,8 +22,7 @@ Baseline evaluation of Qwen 2.5 1.5B model on GSM8K dataset
 - [expert_iteration.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.py)
 - [expert_iteration.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.sh) 
 
-### GRPO Helper
-(Section 7)
+### GRPO
 - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
 - [grpo_training.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_training.py) 
 
