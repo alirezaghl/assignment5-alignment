@@ -12,12 +12,14 @@ Baseline evaluation of Qwen 2.5 1.5B model on GSM8K dataset
 ### SFT Experiment
 
 - [sft_experiment.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.py) 
-- [experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh) 
+- [experiments.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/sft_experiment.sh)
+- [report](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/results/sft_experiment.md) 
 
 ### Expert Iteration
 
 - [expert_iteration.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.py)
-- [expert_iteration.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.sh) 
+- [expert_iteration.sh](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/expert_iteration.sh)
+- [report](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/results/expert_iteration.md)
 
 ### GRPO
 - [grpo_helper.py](https://github.com/alirezaghl/assignment5-alignment/blob/main/cs336_alignment/grpo_helper.py)
